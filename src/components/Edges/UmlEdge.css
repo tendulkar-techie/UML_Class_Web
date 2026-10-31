@@ -1,0 +1,39 @@
+.uml-edge-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uml-edge-label {
+  background: rgba(15, 20, 40, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  color: #e0e6f0;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  pointer-events: all;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.uml-edge-label:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(15, 20, 40, 0.95);
+}
+
+.multiplicity-source,
+.multiplicity-target {
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  color: #94a3b8;
+  background: rgba(10, 14, 26, 0.8);
+  padding: 1px 4px;
+  border-radius: 4px;
+  pointer-events: none;
+}
